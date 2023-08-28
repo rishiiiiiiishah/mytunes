@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+font-size: 62.5%;
+}
+
+
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}
+a  {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+header {
+    height: 50px;
+    background-color:#4e0b5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+align-items: center;
+padding: 20px;
+
+
+}
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+    font-size: 20px;
+   
+}
+nav ul li:hover {
+border-bottom: 2px solid white;
+}
+
+.menubar {
+    display: none;
+}
+
+
+.menubar i {
+font-size: 24px;
+}
+
+
+.herosection {
+    background-image:url(djimage.png);
+   
+   
+    height: 100vh;
+background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+
+    
+}
+
+.herosection h1 {
+    font-size: 9.6rem;
+}
+
+.herosection h3 {
+    font-size: 3.2rem;
+}
+.herosection .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.musicsection {
+padding-top: 50px;
+background-color:#4e0b5a;
+color: white;
+
+}
+
+.musicsection .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ipad {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+ img {
+    height: 500px;
+  
+ }
+
+ button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+ }
+ button:hover {
+    transition: 0.2s ease-in-out;
+    opacity:0.8;
+ }
+
+
+.primbutton {
+    background-color: red;
+    color: white;
+}
+
+.secbutton {
+    background-color: purple;
+    color: white;
+}
+
+.aboutmusic {
+    padding-top: 400px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+
+.concert {
+    display: flex;
+    justify-content: center;
+display: grid;
+height: 200px;
+margin-top: -80px;
+
+}
+
+.written {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    margin-top: -400px;
+}
+.giftcard {
+    margin-top: -80px;
+}
+
+.giftsection {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    margin-top: 400px;
+}
+
+.giftcontent {
+display: flex;
+flex-direction: column;p
+}
+
+
+.footerupper {
+    background-color: #4e0b5a;
+    padding: 20px;
+}
+
+.footerupper .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footerupper h4 {
+   padding-bottom: 10px;
+   border-bottom: 2px solid white;
+   margin-bottom: 10px;
+
+}
+
+.footerlower {
+    background-color:#a958b8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+color: white;
+} 
+
+
+@media(max-width: 495px) {
+    nav ul {
+        display: none;
+    }
+    .menubar {
+        display: block;
+    }
+    .footerupper .container {
+        flex-wrap: wrap;
+    }
+
+        .footerupper .footerlinks {
+            min-width: 150px;
+        }
+
+
+    
+    }
+
+    @media(max-width:800px) {
+        .ipad img{
+max-width: 100%;
+        }
+    }
+
+    @media(max-width:800px) {
+        .concert img{
+max-width: 100%;
+        }
+    }
+
+    @media(max-width: 768px) {
+        .footerupper .container {
+            flex-wrap: wrap;
+        }
+            html {
+                font-size: 40%;
+            }
+        
+    }
+    @media(max-width:550px) {
+        .giftcard img{
+width: 40rem;
+        }
+
+
+    }
+
+
+    @media(max-width:1200px) {
+        .giftsection{
+flex-direction: column;
+        }
+
+
+    }
+
+
